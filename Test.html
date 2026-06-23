@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Game ID – Ta vie de gamer, unifiée</title>
+
+  <style>
+
+    /* -------------------- ANIMATION NÉON -------------------- */
+    @keyframes glowPulse {
+      0% { box-shadow: 0 0 10px rgba(255,0,0,0.25); }
+      50% { box-shadow: 0 0 25px rgba(255,0,0,0.55); }
+      100% { box-shadow: 0 0 10px rgba(255,0,0,0.25); }
+    }
+
+    /* -------------------- GLOBAL -------------------- */
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Roboto, sans-serif;
+      background-color: #0a0a0a;
+      color: #f5f5f5;
+    }
+
+    header {
+      background-color: #1a1a1a;
+      padding: 20px 40px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-bottom: 2px solid #b30000;
+    }
+
+    header img {
+      height: 150px;
+    }
+
+    h1 {
+      color: #ff0000;
+      font-weight: 600;
+      letter-spacing: 1px;
+    }
+
+    .hero {
+      text-align: center;
+      padding: 80px 20px;
+    }
+
+    .hero h2 {
+      font-size: 2.2em;
+      color: #ff3333;
+    }
+
+    .hero p {
+      max-width: 700px;
+      margin: 20px auto;
+      font-size: 1.1em;
+      line-height: 1.6;
+      color: #ccc;
+    }
+
+    /* --- SECTION EXPLICATION --- */
+    .explain {
+      padding: 60px 40px;
+      background-color: #111;
+      border-top: 2px solid #b30000;
+      border-bottom: 2px solid #b30000;
+    }
+
+    .explain h2 {
+      text-align: center;
+      color: #ff3333;
+      font-size: 2em;
+      margin-bottom: 20px;
+    }
+
+     .chat:first-of-type {
+     border-top: 2px solid #b30000;
+    }
+
+     .chat:not(:first-of-type) {
+     border-top: none;
+    }
+
+
+    .explain p {
+      max-width: 900px;
+      margin: 0 auto;
+      font-size: 1.15em;
+      line-height: 1.7;
+      color: #ddd;
+      text-align: center;
+    }
+
+    /* --- SECTION AVIS UTILISATEURS --- */
+    .testimonials {
+      background-color: #ffffff;
+      color: #111;
+      padding: 70px 40px;
+      text-align: center;
+    }
+
+    .testimonials h2 {
+      font-size: 2em;
+      color: #b30000;
+      margin-bottom: 40px;
+    }
+
+    .testimonial-card {
+      max-width: 900px;
+      margin: 0 auto 40px auto;
+      background-color: #f7f7f7;
+      border-left: 5px solid #ff0000;
+      padding: 25px 30px;
+      border-radius: 8px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.1);
+      text-align: left;
+    }
+
+    .testimonial-card h3 {
+      margin: 0 0 10px 0;
+      color: #b30000;
+      font-size: 1.3em;
+    }
+
+    .testimonial-card p {
+      margin: 0;
+      line-height: 1.6;
+      color: #333;
+    }
+
+    .gallery {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      flex-wrap: wrap;
+      padding: 60px 20px;
+      background-color: #141414;
+    }
+
+    .gallery img {
+      width: 300px;
+      height: 500px;
+      object-fit: cover;
+      border-radius: 10px;
+      border: 2px solid #ff0000;
+      box-shadow: 0 0 10px rgba(255, 0, 0, 0.3);
+    }
+
+    /* --- CHAT + XP --- */
+    .chat {
+      background-color: #1a1a1a;
+      padding: 40px;
+      text-align: center;
+      border-top: 2px solid #b30000;
+    }
+
+    .chat h3 {
+      color: #ff3333;
+      margin-bottom: 10px;
+    }
+
+    .chat-box {
+      width: 80%;
+      max-width: 600px;
+      margin: 0 auto;
+      background-color: #0f0f0f;
+      border: 1px solid #ff0000;
+      border-radius: 8px;
+      padding: 20px;
+      color: #ccc;
+      font-style: italic;
+
+      /* ⭐ AJOUT DE L’EFFET NÉON ⭐ */
+      animation: glowPulse 3s infinite ease-in-out;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9em;
+      color: #777;
+      border-top: 1px solid #333;
+    }
+
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <img src="logo-gameid.png" alt="Logo Game ID">
+    <h1>Game ID</h1>
+  </header>
+
+  <section class="hero">
+    <h2>Ta vie de gamer, unifiée</h2>
+    <p>Game ID centralise tes jeux, tes statistiques et tes succès sur toutes les plateformes. Découvre ton profil complet, compare tes performances avec tes amis et partage ta passion dans un espace premium et social.</p>
+  </section>
+
+  <section class="explain">
+    <h2>Pourquoi Game ID ?</h2>
+    <p>
+      L’application permet à chaque joueur de créer un compte personnel et d’y connecter facilement tous ses jeux, qu’ils viennent de Riot, Supercell, Steam ou d’autres plateformes. Une fois les jeux synchronisés, l’app centralise automatiquement toutes les informations importantes : les quêtes en cours, les trophées et succès débloqués, les records personnels, le temps total passé sur chaque jeu, les parties gagnées ou perdues, ainsi que la moyenne de jeu par semaine.
+      <br><br>
+      L’utilisateur obtient ainsi une vision complète et unifiée de sa vie de gamer, sans avoir à naviguer entre plusieurs applications. L’aspect social est tout aussi important : chacun peut ajouter des amis, comparer ses statistiques avec eux, voir les jeux en commun et suivre leurs performances.
+    </p>
+  </section>
+
+  <section class="testimonials">
+    <h2>Ils utilisent déjà Game ID</h2>
+
+    <div class="testimonial-card">
+      <h3>Gabriel, 16 ans – Joueur multi‑plateforme</h3>
+      <p>Je joue à Valorant, Brawl Stars, Fortnite… Je passe d’un jeu à l’autre sans jamais savoir combien de temps je joue vraiment.  
+        Grâce à Game ID, j’ai enfin une vision claire : mes heures, mes progrès, mes records… et je peux comparer tout ça avec mes potes sans avoir mes stats éparpillées partout !</p>
+    </div>
+
+    <div class="testimonial-card">
+      <h3>Nora, 24 ans – Joueuse casual mais organisée</h3>
+      <p>Je joue surtout le soir pour me détendre, sur Switch, mobile et PC. Avant, je perdais le fil : rien n’était synchronisé, j’oubliais mes jeux commencés…  
+        Game ID m’aide à suivre mes habitudes, garder mes records et comparer avec mes amis sans pression. Tout est centralisé, enfin.</p>
+    </div>
+  </section>
+
+  <section class="gallery">
+    <img src="connexion.png">
+    <img src="statistiques.png">
+    <img src="amis.png">
+  </section>
+
+  <section class="chat">
+    <h3>À venir dans Game ID</h3>
+    <div class="chat-box">
+      Module de chat – les joueurs échangent leurs records et leurs astuces.
+    </div>
+  </section>
+
+  <section class="chat">
+    <div class="chat-box">
+      XP de maîtrise - Gagnez des XP en faisant des quêtes, jouant souvant, ayant beaucoup de maîtrise et comparez-vous avec vos amis !
+    </div>
+  </section>
+
+  <footer>
+    © 2026 Game ID – Tous droits réservés
+  </footer>
+
+</body>
+</html>
